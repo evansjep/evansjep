@@ -1,17 +1,45 @@
-import Link from "next/link";
+"use client";
 
-export default function Navbar() {
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { siteConfig } from "@/lib/site-config";
+
+const navLinks = [
+  { href: "/", label: "Home" },
+  { href: "/about", label: "About" },
+  { href: "/projects", label: "Projects" },
+  { href: "/writing", label: "Writing" },
+  { href: "/contact", label: "Contact" },
+];
+
+export function Navbar() {
+  const pathname = usePathname() || "/";
+
   return (
-    <nav className="flex justify-between py-6 border-b">
-      <Link href="/" className="font-semibold">
-        Evans Jep
+    <nav className="site-nav">
+      <Link href="/" className="site-nav__brand">
+        {siteConfig.name}
       </Link>
 
-      <div className="flex gap-6 text-sm text-gray-600">
-        <Link href="/about">About</Link>
-        <Link href="/projects">Projects</Link>
-        <Link href="/writing">Writing</Link>
-        <Link href="/contact">Contact</Link>
+      <div className="site-nav__links">
+        {navLinks.map((link) => {
+          const isActive =
+            link.href === "/"
+              ? pathname === "/"
+              : pathname.startsWith(link.href);
+
+          return (
+            <Link
+              key={link.href}
+              href={link.href}
+              className={`site-nav__link ${
+                isActive ? "site-nav__link--active" : ""
+              }`}
+            >
+              {link.label}
+            </Link>
+          );
+        })}
       </div>
     </nav>
   );

@@ -1,5 +1,7 @@
 import "./globals.css";
 import { siteConfig } from "@/lib/site-config";
+import { Container } from "@/components/Container";
+import { Navbar } from "@/components/Navbar";
 
 export const metadata = {
   title: siteConfig.name,
@@ -13,9 +15,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-white text-black antialiased">
-        <div className="max-w-5xl mx-auto px-6">
-          {children}
+      <body className="bg-white text-slate-950 antialiased">
+        <div className="page-shell">
+          <Container>
+            <Navbar />
+          </Container>
+          <Container>{children}</Container>
         </div>
       </body>
     </html>
