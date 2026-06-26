@@ -5,7 +5,7 @@ export default function Contact() {
         <div className="section-header">
           <h1 className="page-title">Contact</h1>
           <p className="page-intro">
-            For collaborations, partnerships, or inquiries.
+            Minimal access layer for direct founder connection.
           </p>
         </div>
 
