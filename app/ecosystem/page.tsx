@@ -1,3 +1,5 @@
+import { siteConfig } from "@/lib/site-config";
+
 export default function Ecosystem() {
   return (
     <main className="main-content">
@@ -9,19 +11,19 @@ export default function Ecosystem() {
           </p>
         </div>
 
-        <div className="section-grid">
-          <div className="feature-card">
-            <p className="feature-card__title">Clesla</p>
-            <p className="feature-card__text">Commerce infrastructure for audio systems.</p>
-          </div>
-          <div className="feature-card">
-            <p className="feature-card__title">Dee Cleaneagles</p>
-            <p className="feature-card__text">Technology commerce platform for Africa.</p>
-          </div>
-          <div className="feature-card">
-            <p className="feature-card__title">Orviansla</p>
-            <p className="feature-card__text">Creator identity infrastructure.</p>
-          </div>
+        <div className="ecosystem-grid">
+          {siteConfig.ecosystem.map((company) => (
+            <article key={company.name} className="ecosystem-module">
+              <div className="module-header">
+                <h3 className="module-name">{company.name}</h3>
+                <p className="module-type">{company.type}</p>
+              </div>
+              <div className="module-meta">
+                <span className="module-status">{company.status}</span>
+              </div>
+              <p className="module-description">{company.description}</p>
+            </article>
+          ))}
         </div>
       </section>
     </main>

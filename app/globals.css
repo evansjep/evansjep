@@ -186,67 +186,6 @@ svg {
   font-size: 1rem;
 }
 
-.section-grid {
-  display: grid;
-  gap: 1.5rem;
-  margin-top: 2rem;
-}
-
-@media (min-width: 640px) {
-  .section-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-}
-
-.feature-card {
-  background: rgba(15, 23, 42, 0.02);
-  padding: 1.5rem;
-  border-radius: 1rem;
-}
-
-.feature-card__title {
-  margin: 0 0 0.5rem;
-  font-size: 1rem;
-  font-weight: 600;
-}
-
-.feature-card__text {
-  margin: 0;
-  color: #475569;
-  line-height: 1.8;
-}
-
-.project-list {
-  display: grid;
-  gap: 1px;
-  background: rgba(15, 23, 42, 0.06);
-  border-radius: 1rem;
-  overflow: hidden;
-  margin-top: 2rem;
-}
-
-.project-card {
-  padding: 1.75rem 1.5rem;
-  background: #ffffff;
-}
-
-.project-card:nth-child(odd) {
-  background: #f9fafb;
-}
-
-.project-title {
-  margin: 0;
-  font-size: 1.05rem;
-  font-weight: 600;
-  color: #111827;
-}
-
-.project-description {
-  margin: 0.6rem 0 0;
-  color: #475569;
-  line-height: 1.8;
-}
-
 .page-title {
   margin: 0 0 1.25rem;
   font-size: clamp(1.875rem, 3vw, 2.5rem);
@@ -343,32 +282,5 @@ svg {
   color: #d1d5db;
 }
 
-/* Entity List */
-.entity-list {
-  list-style: none;
-  padding: 0;
-  margin: 2rem 0 0;
-  display: grid;
-  gap: 1.5rem;
-}
 
-.entity-item {
-  margin: 0;
-  padding: 1rem;
-  background: rgba(15, 23, 42, 0.02);
-  border-radius: 0.5rem;
-}
-
-.entity-name {
-  margin: 0 0 0.25rem;
-  font-weight: 600;
-  font-size: 1rem;
-}
-
-.entity-description {
-  margin: 0;
-  color: #475569;
-  font-size: 0.95rem;
-  line-height: 1.6;
-}
 
