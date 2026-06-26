@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <main className="main-content">
       <section className="hero">
-        <p className="eyebrow">Founder Operating System</p>
+        <p className="eyebrow">Founder Execution Platform</p>
         <h1 className="hero-title">Evans Jep</h1>
         <p className="hero-copy">
           Creating lasting value and advancing God’s purpose.
@@ -22,26 +22,26 @@ export default function Home() {
 
       <section className="section">
         <div className="section-header">
-          <h2 className="section-title">Currently building</h2>
+          <h2 className="section-title">Ecosystem</h2>
           <p className="section-copy">
-            Foundational infrastructure for commerce, identity, and creator economy systems.
+            Structured system modules representing foundational infrastructure.
           </p>
         </div>
 
-        <ul className="entity-list">
-          <li className="entity-item">
-            <p className="entity-name">Clesla</p>
-            <p className="entity-description">Commerce infrastructure for audio systems.</p>
-          </li>
-          <li className="entity-item">
-            <p className="entity-name">Dee Cleaneagles</p>
-            <p className="entity-description">Technology commerce platform for Africa.</p>
-          </li>
-          <li className="entity-item">
-            <p className="entity-name">Orviansla</p>
-            <p className="entity-description">Creator identity infrastructure.</p>
-          </li>
-        </ul>
+        <div className="ecosystem-grid">
+          {siteConfig.ecosystem.map((company) => (
+            <article key={company.name} className="ecosystem-module">
+              <div className="module-header">
+                <h3 className="module-name">{company.name}</h3>
+                <p className="module-type">{company.type}</p>
+              </div>
+              <div className="module-meta">
+                <span className="module-status">{company.status}</span>
+              </div>
+              <p className="module-description">{company.description}</p>
+            </article>
+          ))}
+        </div>
       </section>
 
       <section className="section">

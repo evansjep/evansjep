@@ -49,4 +49,25 @@ export const siteConfig = {
     github: "https://github.com/RealEvansJep",
     website: "https://evansjep.com",
   },
+
+  ecosystem: [
+    {
+      name: "Clesla",
+      type: "Commerce Infrastructure",
+      status: "Building",
+      description: "Audio systems commerce and operations infrastructure.",
+    },
+    {
+      name: "Dee Cleaneagles",
+      type: "Technology Commerce Platform",
+      status: "Building",
+      description: "Cross-border technology commerce system for Africa.",
+    },
+    {
+      name: "Orviansla",
+      type: "Creator Infrastructure",
+      status: "Design Phase",
+      description: "Identity and commerce infrastructure for creators and businesses.",
+    },
+  ],
 };
