@@ -3,28 +3,30 @@ import { siteConfig } from "@/lib/site-config";
 export default function Home() {
   return (
     <main className="main-content">
-      <section className="hero">
+      {/* Identity Section - Enhanced Prominence */}
+      <section className="identity-section">
         <p className="eyebrow">Founder Execution Platform</p>
-        <h1 className="hero-title">Evans Jep</h1>
-        <p className="hero-copy">
-          Creating lasting value and advancing God’s purpose.
-        </p>
+        <h1 className="identity-title">{siteConfig.identity.name}</h1>
+        <p className="identity-subtitle">{siteConfig.identity.role}</p>
+        <p className="identity-mission">{siteConfig.identity.mission}</p>
       </section>
 
+      {/* Mission Section */}
       <section className="section">
         <div className="section-header">
           <h2 className="section-title">Mission</h2>
           <p className="section-copy">
-            Create structures, products, and systems that serve people well and endure.
+            {siteConfig.focus}
           </p>
         </div>
       </section>
 
+      {/* Ecosystem Section */}
       <section className="section">
         <div className="section-header">
-          <h2 className="section-title">Ecosystem</h2>
+          <h2 className="section-title">Building</h2>
           <p className="section-copy">
-            Structured system modules representing foundational infrastructure.
+            Systems and infrastructure representing the current execution focus.
           </p>
         </div>
 
@@ -44,19 +46,21 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Principles Section */}
       <section className="section">
         <div className="section-header">
           <h2 className="section-title">Principles</h2>
           <p className="section-copy">
-            A simple operating approach for long-term action.
+            The operating foundation for long-term execution.
           </p>
         </div>
 
         <ul className="principles-list">
-          <li className="principle-item">Long-term clarity in every decision.</li>
-          <li className="principle-item">Stewardship as the primary operating model.</li>
-          <li className="principle-item">Build systems that increase capacity over time.</li>
-          <li className="principle-item">Maintain focus through restraint and structure.</li>
+          {siteConfig.principles.map((principle) => (
+            <li key={principle} className="principle-item">
+              {principle}
+            </li>
+          ))}
         </ul>
       </section>
     </main>
