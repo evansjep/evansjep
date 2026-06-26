@@ -1,5 +1,5 @@
 
-# Evans Jep — Founder Execution Platform
+# Evans Jep  Founder Execution Platform
 
 > Building systems, technology, and companies that create lasting value and advance long-term purpose.
 
