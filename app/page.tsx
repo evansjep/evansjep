@@ -1,12 +1,6 @@
 import Link from "next/link";
 import { siteConfig } from "@/lib/site-config";
 
-const executionSignals = [
-  { label: "Clesla", status: "Building" },
-  { label: "Teclaxon", status: "Building" },
-  { label: "Orviansla", status: "Design Phase" },
-];
-
 const infrastructureLayers = [
   "Data layer (Supabase / PostgreSQL)",
   "Authentication systems",
@@ -30,9 +24,9 @@ export default function Home() {
       <section className="hero-panel">
         <div className="hero-copy-block">
           <p className="section-label">Founder Execution Platform</p>
-          <h1 className="hero-title">Founder Execution Platform</h1>
-          <p className="hero-subtitle">Build systems that outlast their builder</p>
-          <p className="hero-role">Founder • Builder • Steward</p>
+          <h1 className="hero-title">{siteConfig.identity.name}</h1>
+          <p className="hero-subtitle">{siteConfig.identity.mission}</p>
+          <p className="hero-role">{siteConfig.identity.role}</p>
         </div>
 
         <div className="hero-status-block">
@@ -46,26 +40,21 @@ export default function Home() {
         <div className="section-header">
           <p className="section-label">System Overview</p>
           <h2 className="section-title">
-            A founder operating system for building interconnected companies and infrastructure layers.
+            A founder operating system for building durable companies and infrastructure layers.
           </h2>
+          <p className="section-copy">
+            The work is intentionally structured around identity, execution, and long-term stewardship.
+          </p>
         </div>
 
         <div className="system-node-grid" aria-label="Core system nodes">
-          <article className="system-node">
-            <p className="node-label">Clesla</p>
-            <h3 className="node-title">Commerce Infrastructure</h3>
-            <p className="node-copy">Execution infrastructure for operating commerce with discipline.</p>
-          </article>
-          <article className="system-node">
-            <p className="node-label">Teclaxon</p>
-            <h3 className="node-title">Cross-Border Systems</h3>
-            <p className="node-copy">Infrastructure for movement, coordination, and durable trade architecture.</p>
-          </article>
-          <article className="system-node">
-            <p className="node-label">Orviansla</p>
-            <h3 className="node-title">Identity Systems</h3>
-            <p className="node-copy">Foundational systems for presence, trust, and long-term institutional identity.</p>
-          </article>
+          {siteConfig.ecosystem.map((company) => (
+            <article key={company.name} className="system-node">
+              <p className="node-label">{company.name}</p>
+              <h3 className="node-title">{company.type}</h3>
+              <p className="node-copy">{company.description}</p>
+            </article>
+          ))}
         </div>
       </section>
 
@@ -79,15 +68,15 @@ export default function Home() {
           </ul>
         </article>
 
-        <article className="panel">
+        <article className="panel panel--highlight">
           <p className="section-label">Execution Layer</p>
           <div className="status-list">
-            {executionSignals.map((signal) => (
-              <div key={signal.label} className="status-item">
+            {siteConfig.ecosystem.map((company) => (
+              <div key={company.name} className="status-item">
                 <span className="status-dot" />
                 <div>
-                  <p className="status-label">{signal.label}</p>
-                  <p className="status-value">{signal.status}</p>
+                  <p className="status-label">{company.name}</p>
+                  <p className="status-value">{company.status}</p>
                 </div>
               </div>
             ))}

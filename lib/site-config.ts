@@ -22,11 +22,11 @@ export const siteConfig = {
       description: "Audio systems commerce and operations infrastructure.",
     },
     {
-      name: "Teclaxon",
-      type: "Cross-border Trade Infrastructure",
+      name: "Dee Cleaneagles",
+      type: "Technology Commerce Platform",
       status: "Building",
       description:
-        "Coordination systems for trade, trust, and regional commerce infrastructure.",
+        "Cross-border technology commerce systems for Africa and global digital operations.",
     },
     {
       name: "Orviansla",
