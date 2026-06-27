@@ -8,9 +8,11 @@ const navLinks = [
   { href: "/", label: "Home" },
   { href: "/philosophy", label: "Philosophy" },
   { href: "/ecosystem", label: "Ecosystem" },
+  { href: "/about-founder", label: "About" },
   { href: "/execution", label: "Execution" },
   { href: "/writing", label: "Writing" },
   { href: "/contact", label: "Contact" },
+  { href: "/god-architect", label: "God Architect" },
 ];
 
 export function Navbar() {

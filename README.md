@@ -1,171 +1,94 @@
+# Evans Jep Founder Execution Platform
 
-# Evans Jep  Founder Execution Platform
+Evans Jep is a founder operating system for building durable institutions across commerce, technology, identity, and cross-border infrastructure. The platform is designed as a structured environment for long-term execution rather than a static personal website.
 
-> Building systems, technology, and companies that create lasting value and advance long-term purpose.
-
----
-
-## SYSTEM OVERVIEW
-
-This repository powers **evansjep.com**, a founder execution platform designed as a structured operating system for building and managing multiple companies.
-
-It is not a portfolio.
-It is not a personal blog.
-
-It is a **founder architecture layer** for long-term company building.
-
----
-
-## CORE IDENTITY
-
-Evans Jep operates as:
+## Core identity
 
 Founder • Builder • Steward
 
-Focused on:
+The operating model is grounded in three commitments:
 
-- Long-term value creation
-- Technology systems
-- Commerce infrastructure
-- Creator ecosystems
-- Institutional company building
+- Long-term value creation over short-term signal
+- Systems over standalone products
+- Stewardship over ego-driven visibility
 
----
+## System philosophy
 
-## ACTIVE ECOSYSTEM
+The platform is built to express a living execution architecture. Each layer is intended to reinforce the next: identity informs philosophy, philosophy shapes ecosystem design, ecosystem design drives execution, and execution informs infrastructure planning.
+
+## Architecture overview
+
+The system is organized into five operating layers:
+
+1. Identity Layer
+   - Founder identity
+   - Mission
+   - Operating principles
+
+2. Philosophy Layer
+   - Long-term thinking
+   - Stewardship framework
+   - Decision architecture
+
+3. Ecosystem Layer
+   - Clesla
+   - Teclaxon
+   - Orviansla
+
+4. Execution Layer
+   - Active builds
+   - Development status
+   - Operating cadence
+
+5. Infrastructure Layer
+   - Data systems
+   - Authentication layer
+   - Commerce rails
+   - Creator systems
+
+## Active ecosystem
 
 ### Clesla
-Commerce and operations infrastructure for audio systems.
+Commerce and operations infrastructure for execution-focused systems.
 
-Status: Building
-
----
-
-### Dee Cleaneagles
-Cross-border technology commerce platform focused on Africa.
-
-Status: Building
-
----
+### Teclaxon
+Cross-border infrastructure for trust, movement, and regional coordination.
 
 ### Orviansla
-Identity and commerce infrastructure for creators and businesses.
+Identity and reputation infrastructure for founders, creators, and institutions.
 
-Status: Design Phase
+## Execution model
 
----
+Execution is treated as a continuous operating loop:
 
-## ARCHITECTURE PRINCIPLES
+- Define the governing principle
+- Structure the system around it
+- Maintain clear operating cadence
+- Preserve continuity through disciplined iteration
 
-This system is built with the following principles:
+## Infrastructure layer
 
-- Long-term thinking over short-term output
-- Systems over static pages
-- Clarity over complexity
-- Execution over presentation
-- Structure over decoration
+The platform is prepared for future expansion into durable digital infrastructure, including data persistence, identity services, commerce workflows, and creator-focused systems.
 
----
-
-## TECH STACK
-
-This platform is built using modern production-grade web architecture:
+## Tech stack
 
 - Next.js 15 (App Router)
 - React 19
 - TypeScript
-- Tailwind CSS
+- CSS-based system styling
 - Node.js
-- Vercel (Deployment)
+- Vercel deployment
 
-Future integrations:
+## Deployment
 
-- Supabase (data layer)
-- PostgreSQL
-- Authentication system
-- CMS for writing system
+- Repository: GitHub
+- Hosting: Vercel
+- Domain: evansjep.com
 
----
-
-## SYSTEM ARCHITECTURE
-
-The platform is structured into layered domains:
-
-### 1. Identity Layer
-- Founder identity
-- Mission
-- Principles
-
-### 2. Philosophy Layer
-- Long-term thinking
-- Stewardship framework
-- Value creation model
-
-### 3. Ecosystem Layer
-- Clesla
-- Dee Cleaneagles
-- Orviansla
-
-### 4. Execution Layer
-- Active builds
-- Development tracking
-- System updates
-
-### 5. Infrastructure Layer (Future)
-- Data systems
-- Commerce backend
-- Creator platforms
-
----
-
-## DEVELOPMENT APPROACH
-
-This project follows a strict engineering discipline:
-
-- Minimal UI complexity
-- Strong architectural clarity
-- Scalable system design
-- Component-based structure
-- No unnecessary dependencies
-- Production-first thinking
-
----
-
-## DEPLOYMENT
-
-Primary hosting:
-
-- Vercel
-
-Source control:
-
-- GitHub
-
-Domain:
-
-- evansjep.com
-
----
-
-## IMPORTANT NOTE
-
-This is an evolving founder system.
-
-It is continuously refined as new companies are built and integrated into the ecosystem.
-
----
-
-## CORE PHILOSOPHY
-
-> Build systems that outlast their builder.
-
----
-
-## CONNECT
+## Connect
 
 - Website: https://evansjep.com
-- GitHub: RealEvansJep
-- X: RealEvansJep
-- LinkedIn: realevansjep
+- GitHub: https://github.com/RealEvansJep
+- X: https://x.com/RealEvansJep
+- LinkedIn: https://linkedin.com/in/realevansjep
 
----
