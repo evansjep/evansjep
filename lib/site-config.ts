@@ -22,11 +22,11 @@ export const siteConfig = {
       description: "Audio systems commerce and operations infrastructure.",
     },
     {
-      name: "Dee Cleaneagles",
-      type: "Technology Commerce Platform",
+      name: "Teclaxon",
+      type: "Cross-border Trade Infrastructure",
       status: "Building",
       description:
-        "Cross-border technology commerce platform focused on Africa.",
+        "Coordination systems for trade, trust, and regional commerce infrastructure.",
     },
     {
       name: "Orviansla",
@@ -46,9 +46,22 @@ export const siteConfig = {
   ],
 
   links: {
-    x: "https://x.com/RealEvansJep",
+    x: "https://x.com/realevansjep",
     linkedin: "https://linkedin.com/in/realevansjep",
-    github: "https://github.com/RealEvansJep",
+    github: "https://github.com/evansjep/evanjep",
     website: "https://evansjep.com",
+    instagram: "https://www.instagram.com/realevansjep?igsh=azJ2a3VoZmM5ZTk3",
+    youtube: "https://youtube.com/@realevansjep?si=Gkp36QhHxSNVFqnK",
+    facebook: "https://www.facebook.com/share/1aMzoaRta8/",
+    email: "realevansjep@gmail.com",
   },
+
+  socialLinks: [
+    { platform: "X", url: "https://x.com/realevansjep", label: "@realevansjep" },
+    { platform: "Instagram", url: "https://www.instagram.com/realevansjep?igsh=azJ2a3VoZmM5ZTk3", label: "@realevansjep" },
+    { platform: "YouTube", url: "https://youtube.com/@realevansjep?si=Gkp36QhHxSNVFqnK", label: "@realevansjep" },
+    { platform: "LinkedIn", url: "https://linkedin.com/in/realevansjep", label: "realevansjep" },
+    { platform: "GitHub", url: "https://github.com/evansjep/evanjep", label: "evansjep" },
+    { platform: "Facebook", url: "https://www.facebook.com/share/1aMzoaRta8/", label: "Evans Jep" },
+  ],
 };
